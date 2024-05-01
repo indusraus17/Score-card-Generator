@@ -1,0 +1,123 @@
+.score-card-form input[type="number"]::-webkit-outer-spin-button,
+.score-card-form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+.score-card-form h1 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bolder;
+  color: #f7a072;
+  font-family: 'Courier New', Courier, monospace;
+  grid-column: span 2; 
+}
+
+.score-card-form h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 15px;
+  grid-column: span 2;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.score-card-form h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: darkcyan;
+}
+
+.score-card-form {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f1e8e82d;
+  display: grid;
+  grid-template-columns: 2fr 2fr;  /*Two columns */
+  
+}
+
+.score-card-form .scholastic-area {
+  
+  grid-column: 1; /* Shift to the right side */
+}
+
+.score-card-form .co-scholastic-area {
+  grid-column: 2; /* Shift to the left side */
+}
+.score-card-form .attendance-area{
+  grid-column: span 2;
+}
+.score-card-form .scholastic-area table {
+  
+  width: 100%; /* Set full width */
+  border-collapse: collapse; /* Ensure borders are collapsed */
+  border: 1px solid #ccc; /* Shift to the right side */
+}
+
+.score-card-form .co-scholastic-area table {
+  width: 100%; /* Set full width */
+  border-collapse: collapse; /* Ensure borders are collapsed */
+  border: 1px solid #ccc; /* Shift to the left side */
+}
+
+
+.score-card-form .attendance-area table {
+  width: 100%; /* Set full width */
+  border-collapse: collapse; /* Ensure borders are collapsed */
+  border: 1px solid #ccc; /* Add border */
+}
+
+/* Additional styles */
+.score-card-form th,
+.score-card-form td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.score-card-form th {
+  background-color: #b5e2fa;
+  
+}
+
+.score-card-form input[type="number"],
+.score-card-form input[type="text"],
+.score-card-form select {
+  width: calc(80px - 30px); /* Adjust input width */
+  padding: 8px;
+ text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.score-card-form button {
+  margin-top: 12px; /* Add margin-top to create space */
+  background-color: #0077b6;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  grid-column: span 2; /* Span across both columns */
+  padding: 6px 12px; /* Reduce padding */
+}
+
+.score-card-form button:hover {
+  background-color: #00b4d8;
+}
+
+.gradingScale {
+  width: 100%;
+  grid-column: span 2;
+}
+.gradingScale table {
+  width: 100%;
+}
+.gradingScale tr {
+  max-height: 10px; /* Adjust the height as needed */
+}
+
